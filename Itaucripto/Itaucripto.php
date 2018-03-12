@@ -357,13 +357,11 @@ class Itaucripto
 	 */
 	private function __fillWithSpace($param, $count)
 	{
-		$str = $param;
-
-		while (strlen($str) < $count) {
-			$str = $str . " ";
+		while (strlen($param) < $count) {
+			$param = $param . ' ';
 		}
 
-		return substr($str, 0, $count);
+		return substr($param, 0, $count);
 	}
 
 	/**
@@ -373,13 +371,11 @@ class Itaucripto
 	 */
 	private function __fillWithZero($param, $count)
 	{
-		$str = $param;
-
-		while (strlen($str) < $count) {
-			$str = "0" . $str;
+		while (strlen($param) < $count) {
+			$param = '0' . $param;
 		}
 
-		return substr($str, 0, $count);
+		return substr($param, 0, $count);
 	}
 
 	/**
@@ -418,11 +414,11 @@ class Itaucripto
 				while (is_numeric($c)) {
 
 					$t .= substr($param, $i, 1);
-					$i  += 1;
-					$c   = substr($param, $i, 1);
+					$i += 1;
+					$c  = substr($param, $i, 1);
 				}
 
-				if ($t != "") {
+				if ($t != '') {
 
 					$j  = $t + 0;
 					$s .= chr($j);
@@ -500,7 +496,7 @@ class Itaucripto
 				return "Erro: valor da compra deve possuir no máximo 8 posições antes da virgula.";
 			}
 
-			$this->__amount = $this->__amount . "00";
+			$this->__amount = $this->__amount . '00';
 		}
 
 		$this->__amount = $this->__fillWithZero($this->__amount, 10);
