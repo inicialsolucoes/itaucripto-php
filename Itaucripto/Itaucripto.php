@@ -590,30 +590,6 @@ class Itaucripto
 	}
 
 	/**
-	 * @return string
-	 */
-	public function generateCripto()
-	{
-		if (strlen($this->__companyCode) != Itaucripto::COMPANY_CODE_SIZE) {
-			return "Erro: tamanho do codigo da empresa diferente de 26 posições.";
-		}
-
-		if (strlen($this->__encryptionKey) != Itaucripto::ENCRYPTION_KEY_SIZE) {
-			return "Erro: tamanho da chave diferente de 16 posições.";
-		}
-
-		if (empty($this->__draweeDocNumber)) {
-			return "Erro: código do sacado inválido.";
-		}
-
-		$algorithm = $this->__algorithm($this->__draweeDocNumber, $this->__encryptionKey);
-
-		$algorithm = $this->__algorithm($this->__companyCode . $algorithm, Itaucripto::ITAU_KEY);
-
-		return $this->__convert($algorithm);
-	}
-
-	/**
 	 * @param  int $formatCode (0 or 1)
 	 * @return string
 	 */
@@ -642,6 +618,30 @@ class Itaucripto
 		}
 
 		$algorithm = $this->__algorithm($this->__orderNumber . $formatCode, $this->__encryptionKey);
+
+		$algorithm = $this->__algorithm($this->__companyCode . $algorithm, Itaucripto::ITAU_KEY);
+
+		return $this->__convert($algorithm);
+	}
+
+	/**
+	 * @return string
+	 */
+	public function cripto()
+	{
+		if (strlen($this->__companyCode) != Itaucripto::COMPANY_CODE_SIZE) {
+			return "Erro: tamanho do codigo da empresa diferente de 26 posições.";
+		}
+
+		if (strlen($this->__encryptionKey) != Itaucripto::ENCRYPTION_KEY_SIZE) {
+			return "Erro: tamanho da chave diferente de 16 posições.";
+		}
+
+		if (empty($this->__draweeDocNumber)) {
+			return "Erro: código do sacado inválido.";
+		}
+
+		$algorithm = $this->__algorithm($this->__draweeDocNumber, $this->__encryptionKey);
 
 		$algorithm = $this->__algorithm($this->__companyCode . $algorithm, Itaucripto::ITAU_KEY);
 
