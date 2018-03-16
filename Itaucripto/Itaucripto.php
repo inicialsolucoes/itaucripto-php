@@ -586,10 +586,13 @@ class Itaucripto
 	}
 
 	/**
-	 * @param  int $formatCode (0 or 1)
+	 * Possible format codes:
+	 * 0 - HTML
+	 * 1 - XML
+	 * @param  int $formatCode
 	 * @return string
 	 */
-	public function generateQuery($formatCode)
+	public function generateQuery($formatCode = 0)
 	{
 		if (strlen($this->__companyCode) != Itaucripto::COMPANY_CODE_SIZE) {
 			return "Erro: tamanho do codigo da empresa diferente de 26 posições.";
