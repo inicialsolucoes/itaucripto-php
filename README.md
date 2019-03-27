@@ -33,6 +33,7 @@ $itaucripto->setBankSlipDueDate(date('dmY', strtotime('+7 day')));
 $itaucripto->setBankSlipNoteLine1('Sr. Caixa,');
 $itaucripto->setBankSlipNoteLine1('Não receber após o vencimento.');
 $itaucripto->setBankSlipNoteLine1('Obrigado.');
+$itaucripto->setNote('3'); // Needed to display the lines on the bank slip
 
 $data = $itaucripto->generateData();
 ?>
