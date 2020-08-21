@@ -43,4 +43,4 @@ $data = $itaucripto->generateData();
 
 You can find more info about usage on class source code.
 
-Report any bug or suggest changes using git [issues](https://github.com/inicialcombr/itaucripto-php/issues).
+Report any bug or suggest changes using git [issues](https://github.com/inicialsolucoes/itaucripto-php/issues).
