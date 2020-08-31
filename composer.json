@@ -2,7 +2,7 @@
     "name": "inicial/itaucripto-php",
     "description": "Itau Shopline Integration (PHP)",
     "keywords": ["itau", "shopline", "integration", "itaucripto", "php", "composer"],
-    "homepage": "https://github.com/inicialcombr/itaucripto-php",
+    "homepage": "https://github.com/inicialsolucoes/itaucripto-php",
     "license": "MIT",
     "authors": [
         {
