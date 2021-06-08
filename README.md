@@ -1,5 +1,9 @@
 # Itaucripto (PHP)
 
+[![Packagist](https://img.shields.io/packagist/v/inicial/itaucripto-php.svg?style=flat-square)](https://packagist.org/packages/inicial/itaucripto-php)
+
+### Description
+
 This class was created based on the Java version of Itaucripto.
 
 ### Composer
