@@ -1,6 +1,7 @@
 # Itaucripto (PHP)
 
 [![Packagist](https://img.shields.io/packagist/v/inicial/itaucripto-php.svg?style=flat-square)](https://packagist.org/packages/inicial/itaucripto-php)
+[![License](https://img.shields.io/badge/license-Itaucripto%20PHP-blue.svg?style=flat-square)](https://github.com/inicialsolucoes/itaucripto-php/blob/master/LICENSE)
 
 ### Description
 
