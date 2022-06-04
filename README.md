@@ -8,7 +8,9 @@ This class was created based on the Java version of Itaucripto.
 
 ### Composer
 
+```shell
 $ composer require inicial/itaucripto-php
+```
 
 ### Usage
 
