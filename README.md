@@ -1,6 +1,6 @@
 # Itaucripto (PHP)
 
-[![Latest Stable Version](http://poser.pugx.org/inicial/itaucripto-php/v)](https://packagist.org/packages/inicial/itaucripto-php) [![Total Downloads](http://poser.pugx.org/inicial/itaucripto-php/downloads)](https://packagist.org/packages/inicial/itaucripto-php) [![Latest Unstable Version](http://poser.pugx.org/inicial/itaucripto-php/v/unstable)](https://packagist.org/packages/inicial/itaucripto-php) [![License](http://poser.pugx.org/inicial/itaucripto-php/license)](https://packagist.org/packages/inicial/itaucripto-php) [![PHP Version Require](http://poser.pugx.org/inicial/itaucripto-php/require/php)](https://packagist.org/packages/inicial/itaucripto-php)
+[![Latest Stable Version](https://poser.pugx.org/inicial/itaucripto-php/v)](https://packagist.org/packages/inicial/itaucripto-php) [![Total Downloads](https://poser.pugx.org/inicial/itaucripto-php/downloads)](https://packagist.org/packages/inicial/itaucripto-php) [![Latest Unstable Version](https://poser.pugx.org/inicial/itaucripto-php/v/unstable)](https://packagist.org/packages/inicial/itaucripto-php) [![License](https://poser.pugx.org/inicial/itaucripto-php/license)](https://packagist.org/packages/inicial/itaucripto-php) [![PHP Version Require](https://poser.pugx.org/inicial/itaucripto-php/require/php)](https://packagist.org/packages/inicial/itaucripto-php)
 
 ### Description
 
